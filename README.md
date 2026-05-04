@@ -32,12 +32,12 @@ This project applies deep learning to the early detection of dementia using MRI 
 ### Evaluation
 
 <p align="center">
-  <img src="images/cnf_matrix.png" width="45%" alt="Confusion Matrix"/>
-  <img src="images/auc.png" width="45%" alt="ROC Curve"/>
+  <img src="results/cnf_matrix.png" width="45%" alt="Confusion Matrix"/>
+  <img src="results/auc.png" width="45%" alt="ROC Curve"/>
 </p>
 
 <p align="center">
-  <img src="images/eval_metrics.png" width="60%" alt="Metric Comparison by Class"/>
+  <img src="results/eval_metrics.png" width="60%" alt="Metric Comparison by Class"/>
 </p>
 
 ---
