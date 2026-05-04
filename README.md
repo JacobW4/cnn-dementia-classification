@@ -25,8 +25,8 @@ This project applies deep learning to the early detection of dementia using MRI 
 ### Training Curves
 
 <p align="center">
-  <img src="images/Accuracy.png" width="45%" alt="Accuracy Curve"/>
-  <img src="images/loss.png" width="45%" alt="Loss Curve"/>
+  <img src="results/Accuracy.png" width="45%" alt="Accuracy Curve"/>
+  <img src="results/loss.png" width="45%" alt="Loss Curve"/>
 </p>
 
 ### Evaluation
