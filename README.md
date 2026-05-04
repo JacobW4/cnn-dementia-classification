@@ -1,6 +1,6 @@
 # 🧠 CNN Dementia Classification
 
-A **Convolutional Neural Network (CNN)** trained to classify brain MRI images as either **Healthy** or **Mild Dementia** using TensorFlow and Keras.
+A **Convolutional Neural Network (CNN)** trained to classify brain MRI images as either **Healthy** or **Very Mild Dementia** using TensorFlow and Keras.
 
 > **89% test accuracy · AUC: 0.96 · Binary Classification · Deep Learning**
 
@@ -8,13 +8,13 @@ A **Convolutional Neural Network (CNN)** trained to classify brain MRI images as
 
 ## 📌 Project Overview
 
-This project applies deep learning to the early detection of dementia using MRI scans. A custom CNN was designed and trained to distinguish between healthy patients and those with mild dementia. The model uses convolutional and pooling layers to extract spatial features from grayscale MRI images, with dropout regularization and early stopping to prevent overfitting.
+This project applies deep learning to the early detection of dementia using MRI scans. A custom CNN was designed and trained to distinguish between healthy patients and those with very mild dementia. The model uses convolutional and pooling layers to extract spatial features from grayscale MRI images, with dropout regularization and early stopping to prevent overfitting.
 
 ---
 
 ## 📊 Results
 
-| Metric | Healthy (0) | Mild Dementia (1) |
+| Metric | Healthy (0) | Very Mild Dementia (1) |
 |---|---|---|
 | Precision | 0.9121 | 0.8686 |
 | Recall | 0.8715 | 0.9100 |
@@ -74,7 +74,7 @@ Input (180x180 grayscale MRI image)
 
 The dataset is organized into `train/`, `val/`, and `test/` folders with two class subdirectories:
 - `Healthy/` (Class 0)
-- `MildDementia/` (Class 1)
+- `VeryMildDementia/` (Class 1)
 
 Images were preprocessed using TensorFlow:
 - Resized to **180×180**
@@ -113,13 +113,13 @@ Download from [Kaggle](https://www.kaggle.com/datasets/ashrafulhossenakash/alzhe
 data/
 ├── train/
 │   ├── Healthy/
-│   └── MildDementia/
+│   └── VeryMildDementia/
 ├── val/
 │   ├── Healthy/
-│   └── MildDementia/
+│   └── VeryMildDementia/
 └── test/
     ├── Healthy/
-    └── MildDementia/
+    └── VeryMildDementia/
 ```
 
 ### 4. Update the data paths in the notebook
@@ -137,7 +137,7 @@ jupyter notebook CNN_Model.ipynb
 ```
 cnn-dementia-classification/
 ├── CNN_Model.ipynb        # Main model notebook
-├── images/
+├── results/
 │   ├── Accuracy.png
 │   ├── loss.png
 │   ├── cnf_matrix.png
